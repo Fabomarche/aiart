@@ -1,0 +1,163 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease-out;
+}
+
+.container {
+    padding: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FF7F50;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Header Styles */
+
+header {
+    padding: 40px 0;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF7F50;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* About Section Styles */
+
+#about {
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+#about p {
+    font-size: 1rem;
+    padding: 0 33%;
+}
+
+
+/* Footer Styles */
+
+footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.footer-content a img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.footer-content a:hover img {
+    opacity: 0.8;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    nav ul {
+        margin-bottom: 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
